@@ -56,8 +56,6 @@ color calculate_diffuse(double light[2][3], double *dreflect, double *normal ) {
   d.blue = light[COLOR][BLUE]*dreflect[BLUE]*dp;
   limit_color(&d);
   return d;
-
-
 }
 
 color calculate_specular(double light[2][3], double *sreflect, double *view, double *normal ) {
